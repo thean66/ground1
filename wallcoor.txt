@@ -1,0 +1,14 @@
+ wall
+    {
+        type wall;
+        faces
+        (
+            (0 4 7 3)//-x side
+            (0 3 2 1)//bottom
+            (1 2 6 5)//+x side
+            (4 5 6 7)//top
+            
+            
+        );
+        
+    }

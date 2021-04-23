@@ -1,0 +1,88 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+scale 1;
+
+//These vertices define the block below. It envelopes the stl files. The block can be even bigger than the stl files
+//Watch out if the stl files are created in mm or m!
+xi -1;
+xo 1;
+yi -3;
+yo 3;
+zi -1;
+zo 1;
+ymi -1;
+ymo 1;
+vertices
+(
+    ( $xi $yi $zi )//0
+    ( $xo $yi $zi )//1
+    ( $xo $yo $zi )//2
+    ( $xi $yo $zi )//3
+    ( $xi $yi $zo )//4
+    ( $xo $yi $zo )//5
+    ( $xo $yo $zo )//6
+    ( $xi $yo $zo )//7
+    ( $xi $ymi $zi )//8
+    ( $xo $ymi $zi )//9
+    ( $xo $ymo $zi )//10
+    ( $xi $ymo $zi)//11
+    ( $xi $ymi $zo )//12
+    ( $xo $ymi $zo )//13
+    ( $xo $ymo $zo )//14
+    ( $xi $ymo $zo)//15
+);
+
+blocks
+(
+    hex (0 1 9 8 4 5 13 12) inlet (20 20 20) simpleGrading (1 1 1)
+    hex (11 10 2 3 15 14 6 7) outlet (20 20 20) simpleGrading (1 1 1)
+    hex (8 9 10 11 12 13 14 15) porosity (20 50 20) simpleGrading (1 1 1)
+    //hex (0 1 2 3 4 5 6 7) whole (1 1 1) simpleGrading (1 1 1) 
+);
+
+edges
+(
+);
+
+boundary
+(
+    
+    inlet
+    {
+        type patch;
+        faces
+        (
+            (0 1 5 4)
+            
+        );
+    }
+   
+    outlet
+    {
+        type patch;
+        faces
+        (
+            (3 7 6 2)
+            
+        );
+    }
+    
+    
+    
+);
+
+// ************************************************************************* //

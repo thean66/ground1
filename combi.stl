@@ -1,0 +1,120 @@
+solid ixm
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex -1.000000 3.000000 -1.000000
+vertex -1.000000 3.000000 1.000000
+vertex 1.000000 3.000000 1.000000
+endloop
+endfacet
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex -1.000000 3.000000 -1.000000
+vertex 1.000000 3.000000 1.000000
+vertex 1.000000 3.000000 -1.000000
+endloop
+endfacet
+endsolid ixm
+solid ox
+facet normal 0.000000 -1.000000 0.000000
+outer loop
+vertex 1.000000 -3.000000 -1.000000
+vertex 1.000000 -3.000000 1.000000
+vertex -1.000000 -3.000000 1.000000
+endloop
+endfacet
+facet normal 0.000000 -1.000000 0.000000
+outer loop
+vertex 1.000000 -3.000000 -1.000000
+vertex -1.000000 -3.000000 1.000000
+vertex -1.000000 -3.000000 -1.000000
+endloop
+endfacet
+endsolid ox
+solid por
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex -1.000000 1.000000 -1.000000
+vertex -1.000000 1.000000 1.000000
+vertex 1.000000 1.000000 1.000000
+endloop
+endfacet
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex -1.000000 1.000000 -1.000000
+vertex 1.000000 1.000000 1.000000
+vertex 1.000000 1.000000 -1.000000
+endloop
+endfacet
+facet normal 0.000000 -1.000000 0.000000
+outer loop
+vertex 1.000000 -1.000000 -1.000000
+vertex 1.000000 -1.000000 1.000000
+vertex -1.000000 -1.000000 1.000000
+endloop
+endfacet
+facet normal 0.000000 -1.000000 0.000000
+outer loop
+vertex 1.000000 -1.000000 -1.000000
+vertex -1.000000 -1.000000 1.000000
+vertex -1.000000 -1.000000 -1.000000
+endloop
+endfacet
+endsolid por
+solid wall
+facet normal 1.000000 0.000000 0.000000
+outer loop
+vertex 1.000000 3.000000 -1.000000
+vertex 1.000000 3.000000 1.000000
+vertex 1.000000 -3.000000 1.000000
+endloop
+endfacet
+facet normal 1.000000 0.000000 0.000000
+outer loop
+vertex 1.000000 3.000000 -1.000000
+vertex 1.000000 -3.000000 1.000000
+vertex 1.000000 -3.000000 -1.000000
+endloop
+endfacet
+facet normal -1.000000 0.000000 0.000000
+outer loop
+vertex -1.000000 -3.000000 -1.000000
+vertex -1.000000 -3.000000 1.000000
+vertex -1.000000 3.000000 1.000000
+endloop
+endfacet
+facet normal -1.000000 0.000000 0.000000
+outer loop
+vertex -1.000000 -3.000000 -1.000000
+vertex -1.000000 3.000000 1.000000
+vertex -1.000000 3.000000 -1.000000
+endloop
+endfacet
+facet normal 0.000000 0.000000 -1.000000
+outer loop
+vertex 1.000000 3.000000 -1.000000
+vertex 1.000000 -3.000000 -1.000000
+vertex -1.000000 -3.000000 -1.000000
+endloop
+endfacet
+facet normal 0.000000 0.000000 -1.000000
+outer loop
+vertex 1.000000 3.000000 -1.000000
+vertex -1.000000 -3.000000 -1.000000
+vertex -1.000000 3.000000 -1.000000
+endloop
+endfacet
+facet normal 0.000000 0.000000 1.000000
+outer loop
+vertex 1.000000 -3.000000 1.000000
+vertex 1.000000 3.000000 1.000000
+vertex -1.000000 3.000000 1.000000
+endloop
+endfacet
+facet normal 0.000000 0.000000 1.000000
+outer loop
+vertex 1.000000 -3.000000 1.000000
+vertex -1.000000 3.000000 1.000000
+vertex -1.000000 -3.000000 1.000000
+endloop
+endfacet
+endsolid wall
